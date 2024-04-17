@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  margin: 1rem 0.5rem;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: aqua;
+}
+
+body {
+  background-color: #272727;
+  color: white;
+  font-family: "Baloo 2";
+}
+body section.animation-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+body section.animation-wrapper section.animation {
+  margin-top: 10vh;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body section.animation-wrapper section.animation div.hero {
+  width: 100%;
+  height: 0;
+}
+body section.animation-wrapper section.animation div.hero img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body section.animation-wrapper div.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgb(144, 144, 144), black);
+  z-index: -1;
+}
+body header ul {
+  box-shadow: 0 8px 6px -6px black;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+body header ul li {
+  font-size: 1rem;
+  margin: 1rem;
+}
+body header ul li a {
+  font-size: 1.15rem;
+  text-decoration: none;
+  color: white;
+}
+body header ul li a:hover {
+  color: yellow;
+}
+body main section.main-part {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+body main section.main-part h1 {
+  font-size: 3rem;
+}
+body main section.main-part div.all-inputes form div.grade input {
+  font-size: 1.05rem;
+  padding: 0.5rem;
+  margin: 0.35rem;
+  border-radius: 0.25rem;
+}
+body main section.main-part div.all-inputes form div.grade input.class-credit {
+  width: 10%;
+}
+body main section.main-part div.all-inputes form div.grade select {
+  font-size: 1.05rem;
+  padding: 0.5rem;
+  margin: 0.35rem;
+  border-radius: 0.25rem;
+}
+body main section.main-part div.all-inputes form div.grade button.trash-button {
+  border: none;
+  cursor: pointer;
+  background-color: #272727;
+}
+body main section.main-part div.all-inputes form div.grade button.trash-button i {
+  font-size: 1.25rem;
+  color: white;
+}
+body main section.main-part div.all-inputes form div.grade button.trash-button i:hover {
+  color: aqua;
+}
+body main section.main-part button.plus-btn {
+  background-color: #272727;
+  border: none;
+  width: 2.5rem;
+  margin: 3rem 0rem;
+  cursor: pointer;
+}
+body main section.main-part i {
+  font-size: 2.5rem;
+  color: white;
+}
+body main section.main-part i:hover {
+  color: aqua;
+}
+body main section.main-part div.circle {
+  width: 200px;
+  height: 200px;
+  border: 3px solid red;
+  border-radius: 50%;
+  text-align: center;
+  animation-name: border_color;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+body main section.main-part div.circle p {
+  margin-top: 20px;
+}
+
+.remove {
+  transform: scale(0);
+  transition: all 0.5s ease;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes border_color {
+  0% {
+    border-color: red;
+  }
+  33% {
+    border-color: lightgreen;
+  }
+  66% {
+    border-color: yellow;
+  }
+}/*# sourceMappingURL=style.css.map */
